@@ -23,7 +23,7 @@ Python, Django 4.2, SQLite, HTML/CSS (Bootstrap 4)
 ```bash
 # 1. Clone the repo and enter the folder
 https://github.com/AnujRimal3/django-blog.git
-cd <repo-name>
+cd <django-blog>
 
 # 2. Create and activate a virtual environment
 python -m venv venv
