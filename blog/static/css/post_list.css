@@ -1,0 +1,86 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #e6e6e6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 2em;
+}
+
+.container {
+    display: flex;
+    margin: 20px;
+}
+
+.sidebar {
+    width: 25%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-right: 20px;
+    border: 2px solid #ccc;
+}
+
+.content {
+    width: 75%;
+}
+
+.post {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+}
+
+.post h2 {
+    font-size: 1.5em;
+    color: #4CAF50;
+}
+
+.post p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.votes {
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+.vote-buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.upvote-btn {
+    background-color: #4CAF50;
+}
+
+.downvote-btn {
+    background-color: #f44336;
+}
+
+.footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

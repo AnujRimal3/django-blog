@@ -1,0 +1,42 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+    <link rel="stylesheet" href="{% static 'css/post_list.css' %}">
+
+    <div class="container">
+        <div class="sidebar">
+            <h2>Posts</h2>
+            <p>This is Red Team's Blog Page</p>
+            {% if user.is_authenticated %}
+            <a href="{% url 'post_new' %}" class="top-menu">{% include './icons/file-earmark-plus.svg' %} Post</a>
+            {% else %}
+            <p><a href="{% url 'login' %}">Log in</a> to write and vote on posts.</p>
+            {% endif %}
+        </div>
+        {% for post in posts %}
+            <article class="media content-section">
+                <div class="media-body">
+                    <div class="article-metadata">
+                        <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
+                        <p>{{ post.text }}</p>
+                        <time>published: {{ post.published_date }}</time>
+                        <p>By <a href="{% url 'profile' username=post.author.username %}">{{ post.author }}</a></p>
+                        <div class="votes">
+                            <span>Upvotes: {{ post.upvotes.count }}</span>
+                            <span>Downvotes: {{ post.downvotes.count }}</span>
+                        </div>
+                        {% if user.is_authenticated %}
+                        <div class="vote-buttons">
+                            <a href="{% url 'upvote_post' post.id %}" class="btn upvote-btn">Upvote</a>
+                            <a href="{% url 'downvote_post' post.id %}" class="btn downvote-btn">Downvote</a>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+        {% empty %}
+            <p>No posts yet.</p>
+        {% endfor %}
+    </div>
+{% endblock %}

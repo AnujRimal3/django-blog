@@ -75,4 +75,6 @@ Set both before deploying anywhere public.
 - No comments or pagination yet.
 - Pinned to Django 4.2 (LTS). Logout via link relies on behavior removed in Django 5.
 
+## My contributions
 
+[Add what you personally built, for example: "Implemented the voting system and author-only permissions" or "Repaired the project and wrote the test suite".]
