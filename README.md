@@ -4,8 +4,7 @@ A multi-user blog built with Python and Django, with user accounts, posts and vo
 
 Originally built as a team project for **SDEV 265 (Ivy Tech Community College, Summer 2024)**. Later repaired and tested: resolved merge conflicts, fixed broken routes and templates, added permission checks and an automated test suite.
 
-<!-- Add 2-3 screenshots here: the post list, a post page and the login page.
-![Post list](screenshots/post_list.png) -->
+
 
 ## Features
 
@@ -23,7 +22,7 @@ Python, Django 4.2, SQLite, HTML/CSS (Bootstrap 4)
 
 ```bash
 # 1. Clone the repo and enter the folder
-git clone https://github.com/<your-username>/<repo-name>.git
+https://github.com/AnujRimal3/django-blog.git
 cd <repo-name>
 
 # 2. Create and activate a virtual environment
